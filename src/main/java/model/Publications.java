@@ -19,13 +19,6 @@ public abstract class Publications {
     public int getNumPages () { return numPages; }
     public Colour getColour () { return colour; }
 
-    // MÉTODO TO STRING
-    @Override
-    public String toString () {
-        return "Editorial: " + editorial +
-                "\nNumber of pages: " + numPages +
-                "\nColour: " + colour;
-    }
 
     // ENUM COLOUR
     public enum Colour {

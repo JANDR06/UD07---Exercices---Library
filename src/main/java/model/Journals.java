@@ -25,7 +25,6 @@ public class Journals extends Publications {
     public String toString () {
         return super.toString() +
                 "\nName: " + name +
-                "\nTheme: " + theme +
                 "\nPeriodicity: " + periodicity;
     }
 

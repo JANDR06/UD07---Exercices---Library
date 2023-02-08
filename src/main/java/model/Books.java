@@ -29,10 +29,6 @@ public class Books extends Publications {
     // MÉTODO TO STRING
     @Override
     public String toString () {
-        return super.toString() +
-                "\nAuthor: " + author +
-                "\nTitle: " + title +
-                "\nISBN: " + isbn +
-                "\nNumber of copies: " +numberCopies;
+        return "ISBN: " + isbn;
     }
 }

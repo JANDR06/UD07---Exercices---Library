@@ -20,8 +20,7 @@ public class Newspapers extends Publications {
     // MÉTODO TO STRING
     @Override
     public String toString () {
-        return super.toString() +
-                "\nName: " + name +
+        return "\nName: " + name +
                 "\nPublication day: " + publicationDay;
     }
 }
