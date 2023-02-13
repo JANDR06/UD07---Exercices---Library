@@ -3,26 +3,31 @@ package model;
 public class Subscribers {
 
     // ATRIBUTOS SUSCRIBERS
-    private String nombre;
+    private String name;
     private String dni;
 
+    private Books[] books;
+
     // CONSTRUCTOR
-    public Subscribers (String nombre, String dni) {
-        this.nombre = nombre;
+    public Subscribers (String name, String dni) {
+        this.name = name;
         this.dni = dni;
+        books = new Books[2];
     }
 
     // GET
-    public String getNombre () { return nombre; }
+    public String getName () { return name; }
     public String getDni () { return dni; }
+    public Books[] getBooks () { return books; }
 
     // SET
-    public void setNombre () { this.nombre = nombre; }
+    public void setName () { this.name = name; }
 
     // MÉTODO TO STRING
     @Override
     public String toString () {
-        return "Nombre: " + nombre +
-                "DNI: " + dni;
+        return "Name: " + name +
+                "DNI: " + dni +
+                "List of borrowed books: " + books;
     }
 }

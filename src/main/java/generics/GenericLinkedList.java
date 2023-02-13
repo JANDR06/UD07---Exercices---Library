@@ -2,7 +2,7 @@ package generics;
 
 import java.lang.reflect.Array;
 
-public class ListLibrary<T> {
+public class GenericLinkedList<T> {
 
     // ATRIBUTOS LIST PUBLICATIONS
     private Node<T> head;
@@ -10,7 +10,7 @@ public class ListLibrary<T> {
     private int size;
 
     // CONSTRUCTOR
-    public ListLibrary () {
+    public GenericLinkedList () {
         this.head = null;
         this.tail = null;
         this.size = 0;
@@ -148,7 +148,7 @@ public class ListLibrary<T> {
     }
 
     // MÉTODO PARA AÑADIR A TU LISTA UNA NUEVA
-    public boolean addAll (ListLibrary<T> list) {
+    public boolean addAll (GenericLinkedList<T> list) {
         boolean updated = false;
         Node<T> node = list.getHead();
 
@@ -165,10 +165,10 @@ public class ListLibrary<T> {
     @Override
     public boolean equals (Object obj) {
 
-        if (!(obj instanceof ListLibrary))
+        if (!(obj instanceof GenericLinkedList))
             return false;
 
-        ListLibrary<T> list = (ListLibrary) obj;
+        GenericLinkedList<T> list = (GenericLinkedList<T>) obj;
 
         if (list.size() != this.size)
             return false;
