@@ -6,12 +6,12 @@ public class Library {
 
     // LISTAS DE PUBLICACIONES Y CLIENTES
     GenericLinkedList<Publications> publications;
-    GenericLinkedList<Subscribers> suscribers;
+    GenericLinkedList<Subscribers> subscribers;
 
     // CONSTRUCTOR
     public Library () {
         publications = new GenericLinkedList<>();
-        suscribers = new GenericLinkedList<>();
+        subscribers = new GenericLinkedList<>();
     }
 
     // MÉTODO PARA DAR DE ALTA CUALQUIER TIPO DE PUBLICACIÓN
@@ -24,21 +24,13 @@ public class Library {
         publications.remove(numberDeletePublication);
     }
 
-    // MÉTODO PARA PRESTAR UN EJEMPLAR DE UN LIBRO
-
-
-
-    // MÉTODO PARA DEVOLVER UN EJEMPLAR DE UN LIBRO
-
-
-
-
     // MÉTODO PARA DAR DE ALTA CLIENTE
-    public void createSuscriber (Subscribers x) { suscribers.addHead(x); }
+    public void createSubscriber (Subscribers x) { subscribers.addHead(x); }
 
     // MÉTODO PARA DAR DE BAJA CLIENTE
-    public void deleteSuscriber (int numberDeleteSuscriber) {
-        suscribers.remove(numberDeleteSuscriber);
+    public void deleteSubscriber (int numberDeleteSuscriber) {
+        subscribers.remove(numberDeleteSuscriber);
     }
+
 
 }

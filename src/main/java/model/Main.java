@@ -7,7 +7,7 @@ public class Main {
 
         // CREAMOS UNA LISTA DE PUBLICACCIONES Y OTRA DE CLIENTES
         GenericLinkedList<Publications> benisanoLibrary = new GenericLinkedList<>();
-        GenericLinkedList<Subscribers> suscribersList = new GenericLinkedList<>();
+        GenericLinkedList<Subscribers> subscribersList = new GenericLinkedList<>();
 
         // CREAMOS TRES PUBLICACIONES DISTINTAS
         Copy e1 = new Copy("Porrua", 345, Publications.Colour.C, "Rosa Maria Phillips", "Crimen y castigo", 8420657, 3, "154232");
@@ -31,19 +31,19 @@ public class Main {
         Subscribers s2 = new Subscribers("Marcos Garcia Gomez", "12953412Y");
 
         // DAMOS DE ALTA LOS DOS CLIENTES
-        suscribersList.addHead(s1);
-        suscribersList.addHead(s2);
-        System.out.println(suscribersList);
+        subscribersList.addHead(s1);
+        subscribersList.addHead(s2);
+        System.out.println(subscribersList);
         System.out.println();
 
         // DAMOS DE BAJA EL CLIENTE EN LA POSICION 1. EN ESTE CASO s1
-        suscribersList.remove(1);
-        System.out.println(suscribersList);
+        subscribersList.remove(1);
+        System.out.println(subscribersList);
         System.out.println();
 
         // MODIFICAMOS LOS DATOS DEL CLIENTE s2 Y LE CAMBIAMOS EL NOMBRE
         s2.setName("Carlos");
-        System.out.println(suscribersList);
+        System.out.println(subscribersList);
         System.out.println();
 
 

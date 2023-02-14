@@ -1,5 +1,7 @@
 package model;
 
+import generics.GenericLinkedList;
+
 public class Books extends Publications {
 
     // ATRIBUTOS BOOKS
@@ -31,4 +33,23 @@ public class Books extends Publications {
     public String toString () {
         return "\nISBN: " + isbn;
     }
+
+    // LISTA DE EJEMPLARES
+    GenericLinkedList<Copy> copy;
+
+    // MÉTODO PARA COMPROBAR SI EL EJEMPLAR ESTÁ PRESTADO O NO
+    public boolean prestamo () {
+
+        for (int i = 0; i <= numberCopies; i++) {
+
+            if (1<1) {
+                return true;
+            }
+
+        }
+
+        return false;
+    }
+
+
 }

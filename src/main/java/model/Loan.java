@@ -1,5 +1,7 @@
 package model;
 
+import generics.GenericLinkedList;
+
 public class Loan {
 
     // ATRIBUTOS LOAN
