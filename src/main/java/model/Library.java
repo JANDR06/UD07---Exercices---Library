@@ -24,7 +24,6 @@ public class Library {
         publications.remove(numberDeletePublication);
     }
 
-
     // MÉTODO PARA PRESTAR UN EJEMPLAR DE UN LIBRO
 
 
@@ -42,8 +41,4 @@ public class Library {
         suscribers.remove(numberDeleteSuscriber);
     }
 
-    // MÉTODO PARA  MODIFICAR LOS DATOS DE UN CLIENTE
-    public void setSuscribers (GenericLinkedList<Subscribers> suscribers) {
-        this.suscribers = suscribers;
-    }
 }

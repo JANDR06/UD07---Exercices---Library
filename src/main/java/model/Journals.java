@@ -23,9 +23,8 @@ public class Journals extends Publications {
     // MÉTODO TO STRING
     @Override
     public String toString () {
-        return super.toString() +
-                "\nName: " + name +
-                "\nPeriodicity: " + periodicity;
+        return "\nName: " + name +
+                " | Periodicity: " + periodicity;
     }
 
     // ENUM PERIODICITY

@@ -5,7 +5,6 @@ public class Subscribers {
     // ATRIBUTOS SUSCRIBERS
     private String name;
     private String dni;
-
     private Books[] books;
 
     // CONSTRUCTOR
@@ -21,13 +20,14 @@ public class Subscribers {
     public Books[] getBooks () { return books; }
 
     // SET
-    public void setName () { this.name = name; }
+    public void setName (String name) { this.name = name; }
 
     // MÉTODO TO STRING
     @Override
     public String toString () {
-        return "Name: " + name +
-                "DNI: " + dni +
-                "List of borrowed books: " + books;
+        return "\n" +
+                "Name: " + name +
+                " | DNI: " + dni +
+                " | List of borrowed books: " + books;
     }
 }

@@ -24,11 +24,11 @@ public class Books extends Publications {
     public int getNumberCopies () { return numberCopies; }
 
     // SET
-    public void setNumberCopies () { this.numberCopies = numberCopies; }
+    public void setNumberCopies (int numberCopies) { this.numberCopies = numberCopies; }
 
     // MÉTODO TO STRING
     @Override
     public String toString () {
-        return "ISBN: " + isbn;
+        return "\nISBN: " + isbn;
     }
 }
