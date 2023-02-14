@@ -11,6 +11,9 @@ public class Ejemplar extends Books {
         this.codeEjemplar = codeEjemplar;
     }
 
+    // GET
+    public String getCodeEjemplar () { return codeEjemplar; }
+
     // MÉTODO TO STRING
     @Override
     public String toString () {
