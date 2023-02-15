@@ -31,6 +31,4 @@ public class Library {
     public void deleteSubscriber (int numberDeleteSuscriber) {
         subscribers.remove(numberDeleteSuscriber);
     }
-
-
 }

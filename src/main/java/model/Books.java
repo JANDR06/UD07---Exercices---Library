@@ -35,21 +35,6 @@ public class Books extends Publications {
     }
 
     // LISTA DE EJEMPLARES
-    GenericLinkedList<Copy> copy;
-
-    // MÉTODO PARA COMPROBAR SI EL EJEMPLAR ESTÁ PRESTADO O NO
-    public boolean prestamo () {
-
-        for (int i = 0; i <= numberCopies; i++) {
-
-            if (1<1) {
-                return true;
-            }
-
-        }
-
-        return false;
-    }
-
+    GenericLinkedList<Copy> borrowedCopies;
 
 }

@@ -46,6 +46,8 @@ public class Main {
         System.out.println(subscribersList);
         System.out.println();
 
+        // PRESTAR UN EJEMPLAR DE UN LIBRO A UN CLIENTE
+        //e1.lendCopy(s1);
 
     }
 }
